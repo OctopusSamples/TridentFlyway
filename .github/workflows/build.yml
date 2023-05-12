@@ -23,6 +23,7 @@ jobs:
 
   build-and-push-application:
     runs-on: ubuntu-latest
+    if: github.repository == 'OctopusSamples/TridentFlyway'
     strategy:
       matrix:
         dotnet-version: ['6.0.x']
