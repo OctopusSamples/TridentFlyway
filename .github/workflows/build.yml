@@ -63,7 +63,7 @@ jobs:
               $versionNumber = "$versionNumber-$branchName"
               Write-Host "The version number is now $versionNumber"
               
-              if ($branchName -contains "refs/pull/")
+              if ($branchName -like "refs/pull*")
               {
                 $versionNumber = "$versionNumber-PullRequest"
                 Write-Host "The version number is now $versionNumber"
