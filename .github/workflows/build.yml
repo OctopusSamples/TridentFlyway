@@ -116,10 +116,7 @@ jobs:
           package_id: Trident.Database
           version: ${{ steps.ReleaseNum.outputs.APP_VERSION }}  
           base_path: "db"          
-          files: |
-            "/db/Filter.scpf"
-            "/db/flyway.conf"
-            "/db/migrations/**"
+          files: "**/*"
           output_folder: packaged
         
       - name: Upload artifacts to GitHub
