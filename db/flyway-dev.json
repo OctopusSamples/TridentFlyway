@@ -10,5 +10,6 @@
     "flywayConfFiles": [
       "./flyway.conf"
     ]
-  }
+  },
+  "schemas": []
 }
