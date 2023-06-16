@@ -117,7 +117,7 @@ jobs:
           version: ${{ steps.ReleaseNum.outputs.APP_VERSION }}  
           base_path: "db"
           files: |
-            "filter.scpf"
+            "Filter.scpf"
             "flyway.conf"
             "migrations/**"
           output_folder: packaged
