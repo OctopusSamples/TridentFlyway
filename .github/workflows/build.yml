@@ -115,7 +115,7 @@ jobs:
         with:
           package_id: Trident.Database
           version: ${{ steps.ReleaseNum.outputs.APP_VERSION }}  
-          base_path: "db"
+          base_path: "db"          
           files: "**/*"
           output_folder: packaged
         
