@@ -3,7 +3,8 @@ CREATE TABLE [dbo].[Project]
 [Id] [int] NOT NULL IDENTITY(1, 1),
 [OctopusId] [nvarchar] (256) NOT NULL,
 [SpaceId] [int] NOT NULL,
-[Name] [nvarchar] (256) NOT NULL
+[Name] [nvarchar] (256) NOT NULL,
+[Slug] [nvarchar] (256) NULL
 )
 GO
 ALTER TABLE [dbo].[Project] ADD CONSTRAINT [PK_Project] PRIMARY KEY CLUSTERED ([Id])
