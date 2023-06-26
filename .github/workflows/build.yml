@@ -148,10 +148,9 @@ jobs:
           package_version: ${{ steps.ReleaseNum.outputs.APP_VERSION }}
       
       - name: deploy release
-        uses: OctopusDeploy/deploy-release-tenanted-action@v3
+        uses: OctopusDeploy/deploy-release-action@v3
         id: "deploy_release"
         with:
           project: ${{ env.OCTOPUS_PROJECT_NAME }}
           release_number: ${{ steps.ReleaseNum.outputs.APP_VERSION }}
-          environment: ${{ steps.ReleaseNum.outputs.OCTOPUS_ENVIRONMENT }}
-          tenants: ${{ env.OCTOPUS_TENANT_NAME }}
+          environments: ${{ steps.ReleaseNum.outputs.OCTOPUS_ENVIRONMENT }}
