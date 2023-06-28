@@ -3,7 +3,8 @@ CREATE TABLE [dbo].[Tenant]
 [Id] [int] NOT NULL IDENTITY(1, 1),
 [OctopusId] [nvarchar] (256) NOT NULL,
 [SpaceId] [int] NOT NULL,
-[Name] [nvarchar] (256) NOT NULL
+[Name] [nvarchar] (256) NOT NULL,
+[UrlSlug] [nvarchar] (256) NULL
 )
 GO
 ALTER TABLE [dbo].[Tenant] ADD CONSTRAINT [PK_Tenant] PRIMARY KEY CLUSTERED ([Id])

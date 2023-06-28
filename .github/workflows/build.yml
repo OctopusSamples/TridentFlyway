@@ -136,7 +136,6 @@ jobs:
         with:
           packages: |
             Trident.Database
-            Trident.Web
           version: ${{ steps.ReleaseNum.outputs.APP_VERSION }}
             
       - name: create release
